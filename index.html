@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Weather Dashboard</title>
+</head>
+<body>
+   <header class="dashboard">
+       <h2 class="weather">Weather Dashboard</h2>
+    </header>
+    
+<!--Current Day Container-->
+    
+  <div class="fiveDayForecast">
+    <div class="searchcitycontainer">
+        <h2 class="title">
+            Search For A City:
+        </h2>
+           <div>
+             <input type="text" id="search" placeholder="Search a city...">
+            </div>
+         <div><button type='button' class = "btn btn-primary" id ="searchCity">Search</button></div>
+         <p class="text"></p>
+         </div>
+            <h1 id="currentCityName"></h1> 
+            <h1 id="currentDayDate"></h1>
+            <p id ="currentDayTemp">Temp:</p>
+            <p id = "currentDayWind"> Wind:</p>
+            <p id = "currentDayHumidity"> Humidity:</p>
+            <p id = "currentDayUV">UV Index:</p> 
+        <h2 class="head">5 Day Forecast:</h2>
+      
+   
+    <script type="text/javascript" src="index.js"></script>
+    </body>
+    </html>
