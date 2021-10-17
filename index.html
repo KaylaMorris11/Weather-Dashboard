@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Weather Dashboard</title>
 </head>
 <body>
@@ -30,15 +30,18 @@
            <input type="text" id="search" placeholder="Search a city...">
           </div>
        <div>
-         <button type='button' id ="searchCity">Search</button>
+         <button type="button" id="searchCity">Search</button>
         </div>
         </div>
 
        <div class="col-sm">
        <div class="currentDayContainer">
-       <div class="currentDay">
+       <div class="currentDayC">
           <h1 id="currentCityName"></h1> 
           <h1 id="currentDayDate"></h1>
+          <div class="image">
+            <img class="imgClass" id="img1">
+          </div>
           <p id ="currentDayTemp">Temp:</p>
           <p id = "currentDayWind"> Wind:</p>
           <p id = "currentDayHumidity"> Humidity:</p>
@@ -60,42 +63,43 @@
          <div class="container">
           <div class="row">
             <div class="col-sm">
-            <h1 id="currentDayDate"></h1>
-            <img>
-            <p id ="currentDayTemp">Temp:</p>
-            <p id = "currentDayWind"> Wind:</p>
-            <p id = "currentDayHumidity"> Humidity:</p>
+            <h1 id="dayDate"></h1>
+            <div class="image"><img  class="imgClass" id="img1"></div>
+            <p id ="dayTemp">Temp:</p>
+            <p id = "dayWind"> Wind:</p>
+            <p id = "dayHumidity"> Humidity:</p>
             </div>
             <div class="col-sm">
-              <h1 id="currentDayDate"></h1>
-              <img>
-              <p id ="currentDayTemp">Temp:</p>
-              <p id = "currentDayWind"> Wind:</p>
-              <p id = "currentDayHumidity"> Humidity:</p>
+              <h1 id="dayDate"></h1>
+              <div class="image"><img class="imgClass" id="img1"></div>
+              <p id ="dayTemp">Temp:</p>
+              <p id = "dayWind"> Wind:</p>
+              <p id = "dayHumidity"> Humidity:</p>
             </div>
             <div class="col-sm">
-              <h1 id="currentDayDate"></h1>
-              <img>
-              <p id ="currentDayTemp">Temp:</p>
-              <p id = "currentDayWind"> Wind:</p>
-              <p id = "currentDayHumidity"> Humidity:</p>
+              <h1 id="dayDate"></h1>
+              <div class="image"><img  class="imgClass" id="img1"></div>
+              <p id ="dayTemp">Temp:</p>
+              <p id = "dayWind"> Wind:</p>
+              <p id = "dayHumidity"> Humidity:</p>
             </div>
             <div class="col-sm">
-              <h1 id="currentDayDate"></h1>
-              <img>
-              <p id ="currentDayTemp">Temp:</p>
-              <p id = "currentDayWind"> Wind:</p>
-              <p id = "currentDayHumidity"> Humidity:</p>
+              <h1 id="dayDate"></h1>
+              <div class="image"><img class="imgClass" id="img1"></div>
+              <p id ="dayTemp">Temp:</p>
+              <p id = "dayWind"> Wind:</p>
+              <p id = "dayHumidity"> Humidity:</p>
             </div>
             <div class="col-sm">
-              <h1 id="currentDayDate"></h1>
-              <img>
-              <p id ="currentDayTemp">Temp:</p>
-              <p id = "currentDayWind"> Wind:</p>
-              <p id = "currentDayHumidity"> Humidity:</p>
+              <h1 id="dayDate"></h1>
+              <div class="image"><img class="imgClass" id="img1"></div>
+              <p id ="dayTemp">Temp:</p>
+              <p id = "dayWind"> Wind:</p>
+              <p id = "dayHumidity"> Humidity:</p>
             </div>
           </div>
         </div>
-    <script type="text/javascript" src="index.js"></script>
+    <script  src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     </body>
     </html>
