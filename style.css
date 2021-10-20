@@ -1,5 +1,5 @@
 * {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Geneva, Tahoma, sans-serif;
   }
 
 button{
@@ -9,7 +9,8 @@ button{
 .head {
     text-align: center;
     font-weight: bold;
-    /* margin-bottom: 15px; */
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 
 .dashboard {
@@ -26,4 +27,17 @@ button{
      
 #search {
     margin-bottom: 15px;
+  }
+
+  #dayDate1,
+  #dayDate2,
+  #dayDate3,
+  #dayDate4,
+  #dayDate5{
+font-size:20px;
+  }
+  
+#colsm{
+      background-color:rgb(48, 103, 204);
+      margin-right: 10px;
   }

@@ -20,9 +20,9 @@ function getWeather1() {
     })
     .then(function (data) {
       console.log(data);
-      //based from project 1
+      //inspired from project 1
       $("#currentCityName").text(cityLocation);
-      $("#currentDayDate").text(moment(data).format("MMM/D/ YYYY"));
+      $("#currentDayDate").text(moment(data).format("MMM/D/YYYY"));
       $("#currentDayHumidity").text("Humidity: " + data.main.humidity + "%");
       $("#currentDayTemp").text("Temperature: " + data.main.temp + " F");
       $("#currentDayWind").text("Wind: " + data.wind.speed + " MPH");
@@ -44,11 +44,20 @@ function get5DayForecast() {
       var day = 1;
       console.log($("#dayDate"+day))
       for(let i = 4; i < data.list.length; i+= 8){
-        $("#dayDate"+day).text(data.list[i].dt_txt)
-        $("#dayTemp"+day).text("Temp: "+ data.list[i].main.temp)
+        $("#dayDate"+day).text(moment(data.list[i].dt_txt).format("MM/D/YYYY"))
+        $("#dayTemp"+day).text("Temp: "+ data.list[i].main.temp + " F")
+        $("#dayWind"+day).text("Wind: "+ data.list[i].wind.speed + " MPH")
+        $("#dayHumidity"+day).text("Humidity: "+ data.list[i].main.humidity + "%")
         day++;
       }
-      
+
+      for(i = 0; i<5; i++){
+        document.getElementById("img" + (i+1)).src = "http://openweathermap.org/img/wn/"+
+        data.list[i].weather[0].icon
+        +".png";
+       }
+
+    //   (data.list[i].dt_txt)
     });
 }
 //possibly uv index
