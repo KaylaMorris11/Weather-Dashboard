@@ -3,10 +3,11 @@ var searchEl = $("#search").val();
 var cityLocation = "";
 
 searchCity.click(function () {
-  cityLocation = $("#search").val();
+  cityLocation = $("#search").val().toUpperCase([0]);
   getWeather1();
   get5DayForecast();
 });
+
 
 function getWeather1() {
   console.log("starting");
@@ -56,8 +57,8 @@ function get5DayForecast() {
         data.list[i].weather[0].icon
         +".png";
        }
+       
 
-    //   (data.list[i].dt_txt)
     });
 }
 //possibly uv index

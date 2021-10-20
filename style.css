@@ -1,5 +1,6 @@
 * {
     font-family:Geneva, Tahoma, sans-serif;
+    font-weight: 20px;
   }
 
 button{
@@ -35,9 +36,27 @@ button{
   #dayDate4,
   #dayDate5{
 font-size:20px;
+
   }
-  
+.col-sm{
+    margin-top:50px;
+    padding-top:10px;
+    
+}
 #colsm{
       background-color:rgb(48, 103, 204);
       margin-right: 10px;
   }
+#colsm1{
+    margin-right: 200px;
+    border: 1px solid black;
+  }
+
+button{
+padding: 5px 5px;
+color: white;
+background-color: rgb(42, 32, 180);
+border-radius: 10px;
+border: 1px solid rgb(42, 32, 180)
+  }
+
