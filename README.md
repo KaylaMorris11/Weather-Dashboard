@@ -1,16 +1,13 @@
-# Weather-Dashboard
-A dashboard that displays 5 days of the weather using an API.
+## Description
+Search up any city to get the 5 day forecast! Click on past searched cities to go to their weather again.
 
 # Deployed Page Link
 https://kaylamorris11.github.io/Weather-Dashboard/
 
-## Description
-Search up any city to get the 5 day forecast! Click on past searched cities to go to their weather again.
-
 ## Motivation
 To gain experience using an API and local storage!
 
-## Screenshot
+## Screenshot![Screen Shot 2021-10-19 at 11 57 50 PM](https://user-images.githubusercontent.com/78561316/138190040-0546f9c0-696e-4092-a4e3-c41ca07e4ef8.png)
 
 ## Techonologies Used:
 Jquery, Javascript, HTML, CSS, Openweather API
