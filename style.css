@@ -5,6 +5,11 @@
 
 button{
     margin-top:20px;
+    padding: 5px 5px;
+color: white;
+background-color: rgb(42, 32, 180);
+border-radius: 10px;
+border: 1px solid rgb(42, 32, 180)
 }
 
 .head {
@@ -52,11 +57,7 @@ font-size:20px;
     border: 1px solid black;
   }
 
-button{
-padding: 5px 5px;
-color: white;
-background-color: rgb(42, 32, 180);
-border-radius: 10px;
-border: 1px solid rgb(42, 32, 180)
+#citybutton{
+  background-color: grey;
   }
 

@@ -29,21 +29,22 @@ function updateSearchHistory(cityLocation) {
   // }
 
   //first check if city already exists in SearchHistory
-  
+
   searchHistory.push(cityLocation);
   localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
+
   console.log(searchHistory)
   //add button to search history
   searchHistoryEl.empty();
   for(let i = 0; i < searchHistory.length; i++){
-    
     searchHistoryEl.append(`
-    <button>${searchHistory[i]}</button>
+    <button id="citybutton">${searchHistory[i]}</button>
     `)
+    
   }
-
+ 
 }
-//event listener 
+
 
 
 function getWeather1(cityLocation) {
